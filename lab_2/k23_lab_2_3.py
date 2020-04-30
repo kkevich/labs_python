@@ -64,7 +64,7 @@ def split(file, size):
     """ The function reads the main file in chunks, 
         then sorts and writes these chunks to separate files.  
 
-        return: generator with names of sorted files
+        return: list with names of sorted files
     """ 
     piece = os.path.getsize(file)
     total = int(piece/size) # number of files 
